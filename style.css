@@ -1,0 +1,224 @@
+
+.land-page {
+    background-image: url(bg.png);
+    width: 100%;
+    background-size: 100%;
+}
+
+/* .head{
+    display: flex;
+    flex-direction: row;
+    padding-top: 48px;
+    gap: 56px;
+}
+
+.head img{
+    height: 50px;
+}
+
+.head div{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+.head div:first-child{
+    margin: -15px 522px 0 80px;
+}
+
+.head div:last-child{
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin: 0 80px 0 270px;
+}
+
+.head div:nth-child(2){
+    margin-left: ;
+} */
+
+
+/* 
+header div:last-of-type{
+    
+}
+
+main span{
+    color: white;
+    font-size: 64px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    width: 890px;
+    height: 180px;
+    left: 312px;
+    top: 270px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.data .number{
+    color: white;
+    width: 42px;
+    height: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+}
+
+.data .time{
+    height: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: rgb(112, 112, 112);
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 32px;
+    position: relative;
+    left: 312px;
+    top: 450px;
+    background: #121212;
+}
+
+.time-list{
+    display: flex;
+    gap: 30px;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    left: 0px;
+    top: 911px;
+    background: #121212;
+}
+
+footer .course{
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+    padding: 10px 30px;
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+    left: 312px;
+    top: 43px;
+}
+
+footer span{
+    color:rgb(88, 88, 88);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.score-list span:nth-child(2n){
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+ }
+
+.score-list{
+    display: grid;
+    position: absolute;
+    height: 67px;
+    left: 562px;
+    top: 35px;
+    grid-column: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    grid-template-areas: "score earn" "finish progresss";
+    gap: 10px;
+}
+
+.score{
+    grid-area: score;
+}
+.finish{
+    grid-area: finish;
+}
+.earning{
+    grid-area: earn;
+    margin-left: 81px;
+    width: 714px;
+}
+.progress{
+    grid-area: progresss;
+    margin-left: 81px;
+}
+
+.score span:first-child{
+    margin-right: 101px;
+}
+
+.finish span:last-child{
+    margin-left: 30px;
+}
+
+.earning span:last-child{
+    margin-left: 30px;
+}
+
+#progress-bar-container {
+	height: 7px;
+	position: relative;
+	border-radius: 35px;
+	overflow: hidden;
+    bottom: 0;
+}
+
+.progress-bar-child {
+	width: 740px;
+	height: 7px;
+}
+
+.progress {
+	color: white;
+	text-align: center;
+	line-height: 75px;
+	font-size: 35px;
+	font-family: "Segoe UI";
+	animation-direction: reverse;
+	background: linear-gradient(to right, #DF5950 0%, #451046 40%);
+}
+
+.shrinker {
+	background-color: rgb(255, 255, 255);
+	position: absolute;
+	top: 0;
+	right: 0;
+	width:740px;
+}
+
+.timelapse {
+	animation-name: timelapse;
+	animation-fill-mode: forwards;
+	animation-duration: 0.1s;
+}
+
+@keyframes timelapse {
+	0% {
+		width: 100%;
+	}
+	100% {
+		width: 40%;
+	}
+}
+
+.result span:first-child{
+    margin-left: 81px;
+}
+
+.result span:last-child{
+    margin-left: 723px;
+    color:rgb(88, 88, 88);
+} */
+
